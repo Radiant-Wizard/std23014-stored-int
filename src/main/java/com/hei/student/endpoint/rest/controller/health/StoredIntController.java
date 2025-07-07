@@ -16,11 +16,11 @@ public class StoredIntController {
 
   @GetMapping("/stored-int")
   public int getStoredInt(){
-    return serviceStoredInt.getLocalStoredInt();
+    return serviceStoredInt.getStoredInt();
   }
 
-  @GetMapping("/stored-int-2")
+  @GetMapping("/stored-int-local")
   public int getStoredIntPath(){
-    return serviceStoredInt.getStoredInt();
+    return serviceStoredInt.getLocalStoredInt();
   }
 }
